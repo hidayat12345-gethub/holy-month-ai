@@ -1,0 +1,22 @@
+# ============================================
+# PLAN MODEL
+# ============================================
+
+from sqlalchemy import Column, Integer, String, DateTime
+from sqlalchemy.sql import func
+from app.core.database import Base
+
+
+class Plan(Base):
+    __tablename__ = "plans"
+
+    id = Column(Integer, primary_key=True, index=True)
+    theme = Column(String(100), nullable=False)
+    holy_month = Column(String(100), nullable=False)
+    target_audience = Column(String(200), nullable=False)
+    preferred_language = Column(String(10), nullable=False)
+    total_videos = Column(Integer, nullable=False)
+    current_video = Column(Integer, default=0)
+    status = Column(String(50), default="active")
+    created_at = Column(DateTime, server_default=func.now())
+    updated_at = Column(DateTime, onupdate=func.now())
