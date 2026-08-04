@@ -1,0 +1,20 @@
+# ============================================
+# STREAMLIT CLOUD SECRETS (copy into the app's
+# "Settings -> Secrets" box on share.streamlit.io)
+# Do NOT commit a real secrets.toml to GitHub.
+# ============================================
+
+GEMINI_API_KEY = "your_gemini_api_key_here"
+GEMINI_MODEL = "gemini-2.5-flash"
+
+YOUTUBE_CLIENT_ID = "your_youtube_client_id_here"
+YOUTUBE_CLIENT_SECRET = "your_youtube_secret_here"
+YOUTUBE_REFRESH_TOKEN = "your_youtube_refresh_token_here"
+
+TELEGRAM_BOT_TOKEN = "your_telegram_bot_token_here"
+TELEGRAM_CHAT_ID = "your_telegram_chat_id_here"
+
+DATABASE_URL = "sqlite:///./holy_month.db"
+OUTPUT_FOLDER = "output_videos"
+PUBLISH_HOUR = 8
+REQUIRE_HUMAN_REVIEW = true
