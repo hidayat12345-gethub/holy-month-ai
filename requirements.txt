@@ -1,0 +1,34 @@
+# Web Framework (FastAPI kept for optional local dev only —
+# NOT used when deployed on Streamlit Community Cloud)
+fastapi==0.115.5
+uvicorn[standard]==0.32.1
+streamlit==1.39.0
+
+# Database
+sqlalchemy==2.0.36
+
+# AI
+google-genai==1.2.0
+
+# YouTube
+google-api-python-client==2.152.0
+google-auth-oauthlib==1.2.1
+
+# Telegram
+python-telegram-bot==21.7
+
+# Video processing (requires the ffmpeg binary from packages.txt)
+ffmpeg-python==0.2.0
+pillow==10.4.0
+
+# Utilities
+python-dotenv==1.0.1
+requests==2.32.3
+pydantic==2.10.3
+
+# Analytics & Charts
+plotly==5.24.1
+pandas==2.2.3
+
+# HTTP Client
+httpx==0.27.2
